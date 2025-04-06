@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="../../style/estiloPagina.css">
+    <link id="iconoWeb" rel="icon" type="image/gif" href="../../style/img/un-pan.png">
+    
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .pan-card {
+            width: 30%;
+            height: 30%;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pan-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .pan-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .proximamente {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <a href="../../index.html"><img src="../../style/img/2.png" alt="coche" width="140px"></a>
+        <h1>Migas Amigas</h1>
+
+        <a href="../../index.html" class="es"><img src="../../style/img/paises/spain.png" alt="español" width="70px"></a>
+        <a href="../../index_pg.html" class="pg"><img src="../../style/img/paises/portugal.png" alt="portugues" width="70px"></a>
+    </header>
+    
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../../index_pg.html"><strong>Página principal</strong></a></li>
+            <li><a href="../pagina_panaderia/panaderia.html"><strong>Padeiria</strong></a></li>
+            <li><a href="../pagina_bolleria/bolleria.html"><strong>Confeitaria - Doces</strong></a></li>
+            <li><a href="../pagina_empanadas/empanadas.html"><strong>Empanadas</strong></a></li>
+        </ul>
+    </nav>
+    
+    <!-- Conteúdo principal -->
+    <main>
+        <article>
+            <section>
+                <h1>Pão de Alecrim</h1>
+                <p>Um pão aromático com um toque de alecrim, ideal para acompanhar carnes e queijos.</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                    <!-- Cartões de pães -->
+                    
+                    <div>
+                        <h2 class="proximamente">¡¡ EM BREVE !!</h2>
+                    </div>
+                    
+                    <div class="pan-card">
+                        <img src="../../style/img/panaderia/pan_romero.jpg" alt="Pão de Alecrim">
+                    </div>
+                
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h3>Entre em contato</h3>
+                <p>Endereço: Av. de São Miguel 11, 6300-865 Guarda, Portugal </p>
+                <p>Telefone: +63 123 45 6789</p>
+                <h3>Redes sociais</h3>
+                <div>
+                    <img src="../../style/img/redes sociales/instagram.png" alt="logoInstagram" width="50px">
+                    <img src="../../style/img/redes sociales/gorjeo.png" alt="logoX" width="50px">
+                    <img src="../../style/img/redes sociales/facebook.png" alt="logoFacebook" width="50px">
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <h3>Nos encontre aqui</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.3479433333378!2d-7.248244750701558!3d40.55229194764059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cfbaa09a4ffed%3A0x10e63e3769edd6bb!2sMercadona!5e0!3m2!1ses!2ses!4v1738270706975!5m2!1ses!2ses" width="210" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>Sobre nossa loja</h3>
+                <p>No Migas Amigas usamos ingredientes frescos e de alta qualidade para oferecer as melhores empanadas, pães e doces. Preparamos tudo artesanalmente, garantindo sabor e tradição.</p>
+            </div>
+        </div>
+        <p>© 2025 Migas Amigas | Projetado com amor e sabor</p>
+    </footer>    
+</body>
+</html>

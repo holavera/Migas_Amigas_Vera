@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="../../style/estiloPagina.css">
+    <link id="iconoWeb" rel="icon" type="image/gif" href="../../style/img/un-pan.png">
+    
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .pan-card {
+            width: 30%;
+            height: 30%;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pan-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .pan-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <a href="../../index.html"><img src="../../style/img/2.png" alt="coche" width="140px"></a>
+        <h1>Migas Amigas</h1>
+
+        <a href="../../index.html" class="es"><img src="../../style/img/paises/spain.png" alt="español" width="70px"></a>
+        <a href="../../index_pg.html" class="pg"><img src="../../style/img/paises/portugal.png" alt="portugues" width="70px"></a>
+    </header>
+    
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html"><strong>Página principal</strong></a></li>
+            <li><a href="../pagina_panaderia/panaderia.html"><strong>Panadería</strong></a></li>
+            <li><a href="../pagina_bolleria/bolleria.html"><strong>Pastelería - Bollería</strong></a></li>
+            <li><a href="../pagina_empanadas/empanadas.html"><strong>Empanadas</strong></a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <article>
+            <section>
+                <h1>Pan de Maíz</h1>
+                <p>Un pan rústico con un toque dulce y una textura suave, ideal para acompañar sopas.</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                    <!-- Tarjetas de panes -->
+                     
+                    <div>
+                        <h2>Receta</h2>
+                        <ul>
+                            <li>300g de harina de maíz</li>
+                            <li>200g de harina de trigo</li>
+                            <li>10g de sal</li>
+                            <li>7g de levadura seca</li>
+                            <li>350ml de agua tibia</li>
+                            <li>1 cucharada de miel</li>
+                        </ul>
+                        <h3>Pasos:</h3>
+                        <ol>
+                            <li>Mezclar las harinas con la sal <br>y la levadura.</li>
+                            <li>Añadir el agua y la <br>miel, y amasar bien.</li>
+                            <li>Dejar reposar <br>durante 1 hora.</li>
+                            <li>Moldear y dejar reposar <br>30 minutos más.</li>
+                            <li>Hornear a 180°C <br>durante 40 minutos.</li>
+                            <li>Dejar enfriar antes de servir.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="pan-card">
+                        <img src="../../style/img/panaderia/pan_maiz.jpg" alt="Pan Integral">
+                    </div>
+                    <div>
+                        <h2>Fabricación</h2>
+                        <p>Este pan se elabora con <br>harina de maíz y harina de trigo, <br>logrando una textura única <br>y un ligero dulzor.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h3>Contáctanos</h3>
+                <p>Dirección: Av. de São Miguel 11, 6300-865 Guarda, Portugal </p>
+                <p>Teléfono: +63 123 45 6789</p>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <img src="../../style/img/redes sociales/instagram.png" alt="logoInstagram" width="50px">
+                    <img src="../../style/img/redes sociales/gorjeo.png" alt="logoX" width="50px">
+                    <img src="../../style/img/redes sociales/facebook.png" alt="logoFacebook" width="50px">
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <h3>Encuéntranos aquí</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.3479433333378!2d-7.248244750701558!3d40.55229194764059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cfbaa09a4ffed%3A0x10e63e3769edd6bb!2sMercadona!5e0!3m2!1ses!2ses!4v1738270706975!5m2!1ses!2ses" width="210" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>Sobre nuestra tienda</h3>
+                <p>En Migas Amigas utilizamos ingredientes frescos y de alta calidad para ofrecer las mejores empanadas, panes y bollería. Elaboramos todo artesanalmente, garantizando sabor y tradición.</p>
+            </div>
+        </div>
+        <p>© 2025 Migas Amigas | Diseñado con amor y sabor</p>
+    </footer>
+</body>
+</html>

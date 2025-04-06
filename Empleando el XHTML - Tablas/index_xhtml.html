@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño inspirado en postres peruanos</title>
+  <link rel="stylesheet" href="style/estilo.css" />
+  <link id="iconoWeb" rel="icon" type="image/gif" href="style/img/2.png" />
+  <script src="script/script.js"></script>
+  <style>
+    /* Estilo adicional */
+
+    .postre-card {
+      margin-left: 320px;
+      padding: 10px;
+      border: 1px solid #fbff00;
+      border-radius: 10px;
+      box-shadow: 0 40px 60px rgba(238, 245, 39, 0.1);
+      text-align: center;
+    }
+
+    .postre-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 80px rgb(251, 255, 6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .postre-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 120px rgb(243, 194, 33);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <header>
+    <table width="100%">
+      <tr>
+        <td><a href="index.html"><img src="style/img/2.png" alt="logo" width="140px" /></a></td>
+        <td><h1>Migas Amigas</h1></td>
+        <td>
+          <a href="index.html" class="es"><img src="style/img/paises/spain.png" alt="español" width="70px" /></a>
+          <a href="index_pg.html" class="pg"><img src="style/img/paises/portugal.png" alt="portugues" width="70px" /></a>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <table width="100%">
+      <tr>
+        <td><a href="index.html"><strong>Pagina principal</strong></a></td>
+        <td><a href="pagina_migas_amigas/pagina_panaderia/panaderia.html"><strong>Panadería</strong></a></td>
+        <td><a href="pagina_migas_amigas/pagina_bolleria/bolleria.html"><strong>Pastelería - Bollería</strong></a></td>
+        <td><a href="pagina_migas_amigas/pagina_empanadas/empanadas.html"><strong>Empanadas</strong></a></td>
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <table width="100%">
+      <tr>
+        <!-- Contenido lateral -->
+        <td width="20%">
+          <h2>¡NUESTRA ESTRELLA DE LA SEMANA!</h2>
+          <ul>
+            <li><a href="pagina_migas_amigas/pagina_empanadas/receta_espinacas_ricotta.html">Empanada de Espinacas y Ricotta<img src="style/img/estrella.png" alt="" width="35px" /></a></li>
+          </ul>
+
+          <h2>Recomendaciones personales</h2>
+          <ul>
+            <li><a href="pagina_migas_amigas/pagina_panaderia/receta_pan_rustico.html">Receta de Pan Rústico</a></li>
+            <li><a href="pagina_migas_amigas/pagina_empanadas/receta_nutella.html">Empanada de Nutella</a></li>
+            <li><a href="pagina_migas_amigas/pagina_bolleria/receta_bollo_canela.html">Receta de Bollo de Canela</a></li>
+            <li><a href="pagina_migas_amigas/pagina_panaderia/receta_pan_centeno.html">Receta de Pan de Centeno</a></li>
+          </ul>
+
+          <h2>Lo mejor de nuestra tienda Migas Amigas</h2>
+          <ul>
+            <li><a href="pagina_migas_amigas/pagina_empanadas/receta_humita.html">Empanada de Humita</a></li>
+            <li><a href="pagina_migas_amigas/pagina_panaderia/receta_pan_pasas.html">Receta de Pan de Pasas</a></li>
+            <li><a href="pagina_migas_amigas/pagina_bolleria/receta_bollo_mantequilla.html">Receta de Bollo de Mantequilla</a></li>
+          </ul>
+        </td>
+
+        <!-- Artículos principales -->
+        <td width="60%">
+          <section>
+            <h1>Bienvenidos a la dulzura</h1>
+            <p>En <span class="highlight">Migas Amigas</span>, nos especializamos en ofrecer <span style="color: #ff6600;">panes</span>, <span style="color: #ff3366;">bollos</span> y <span style="color: #ff9900;">empanadas</span> recién horneados, elaborados con <span style="color: #33cc33;">ingredientes de calidad</span> y un toque de <span style="font-weight: bold; color: #ff0000;">amor</span>.</p>
+            <p>Disfruta de nuestros productos <span style="font-weight: bold; color: rgb(11, 0, 165);">frescos</span> para acompañar tu día con el sabor auténtico de una panadería artesanal.</p>
+          </section>
+
+          <section>
+            <h4>Nuestro producto de la semana es...</h4>
+            <img src="style/img/corona.png" alt="corona" width="100px" />
+            <div class="postre-card">
+              <h2>Empanada de Espinacas y Ricotta</h2>
+              <p>Una combinación cremosa y ligera, perfecta para los amantes de los sabores frescos y equilibrados. ¡Irresistible!</p>
+              <img src="style/img/empanadas/empanada_espinacas_ricotta.jpeg" alt="Empanada de Espinacas y Ricotta" />
+            </div>
+            <img src="style/img/cinta.png" alt="estrellitas" width="100px" />
+          </section>
+
+          <a href="pagina_migas_amigas/pagina_empanadas/empanadas.html"><button class="btn">Ver más recetas</button></a>
+        </td>
+
+        <!-- Espacio en blanco -->
+        <td width="20%"></td>
+      </tr>
+    </table>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <table width="100%">
+      <tr>
+        <td width="50%">
+          <h3>Contáctanos</h3>
+          <p>Dirección: Av. de São Miguel 11, 6300-865 Guarda, Portugal </p>
+          <p>Teléfono: +63 123 45 6789</p>
+          <h3>Redes Sociales</h3>
+          <div>
+            <img src="style/img/redes sociales/instagram.png" alt="logoInstagram" width="50px" />
+            <img src="style/img/redes sociales/gorjeo.png" alt="logoX" width="50px" />
+            <img src="style/img/redes sociales/facebook.png" alt="logoFacebook" width="50px" />
+          </div>
+        </td>
+
+        <td width="50%">
+          <h3>Encuéntranos aquí</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.3479433333378!2d-7.248244750701558!3d40.55229194764059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cfbaa09a4ffed%3A0x10e63e3769edd6bb!2sMercadona!5e0!3m2!1ses!2ses!4v1738270706975!5m2!1ses!2ses" width="210" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+      </tr>
+    </table>
+
+    <p>© 2025 Migas Amigas | Todo hecho con amor y sabor</p>
+  </footer>
+
+</body>
+</html>

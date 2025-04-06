@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="../../style/estilo.css">
+    <link id="iconoWeb" rel="icon" type="image/gif" href="../../style/img/un-pan.png">
+    
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .pan-card {
+            display: inline-block;
+            width: 28%; /* Ajustar el tamaño de las tarjetas */
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pan-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .pan-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .proximamente {
+            color: red;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <a href="../../index.html"><img src="../../style/img/2.png" alt="coche" width="140px"></a>
+        <h1>Migas Amigas</h1>
+
+        <a href="../../index.html" class="es"><img src="../../style/img/paises/spain.png" alt="español" width="70px"></a>
+        <a href="../../index_pg.html" class="pg"><img src="../../style/img/paises/portugal.png" alt="portugues" width="70px"></a>
+    </header>
+    
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html"><strong>Página principal</strong></a></li>
+            <li><a href="../pagina_panaderia/panaderia.html"><strong>Panadería</strong></a></li>
+            <li><a href="../pagina_bolleria/bolleria.html"><strong>Pastelería - Bollería</strong></a></li>
+            <li><a href="../pagina_empanadas/empanadas.html"><strong>Empanadas</strong></a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Contenido lateral -->
+        <aside>
+            <h2>Recomendaciones personales</h2>
+            <ul>
+                <li><a href="receta_pan_integral.html">Receta de Pan Integral</a></li>
+                <li><a href="receta_pan_rustico.html">Receta de Pan Rústico</a></li>
+                <li><a href="receta_pan_centeno.html">Receta de Pan de Centeno</a></li>
+            </ul>
+        
+            <h2>Lo más favorito por los clientes</h2>
+            <ul>
+                <li><a href="receta_pan_integral.html">Receta de Pan Integral</a></li>
+                <li><a href="receta_pan_frances.html">Receta de Pan Francés</a></li>
+                <li><a href="receta_pan_pasas.html">Receta de Pan de Pasas</a></li>
+            </ul>
+        
+            <h2>Lo más pedido por los clientes</h2>
+            <ul>
+                <li><a href="receta_pan_avena.html">Receta de Pan de Avena</a></li>
+                <li><a href="receta_pan_molde.html">Receta de Pan de Molde</a></li>
+                <li><a href="receta_pan_cerveza.html">Receta de Pan de Cerveza</a></li>
+            </ul>
+        
+            <h2>Panes exclusivos</h2>
+            <ul>
+                <li><a href="receta_pan_chocolate.html">Receta de Pan de Chocolate</a></li>
+                <li><a href="receta_pan_romero.html">Receta de Pan de Romero</a></li>
+                <li><a href="receta_pan_espelta.html">Receta de Pan de Espelta</a></li>
+            </ul>
+
+            <h2>Todas las recetas de panes</h2>
+            <ul>
+                <li><a href="receta_pan_integral.html">Receta de Pan Integral</a></li>
+                <li><a href="receta_pan_rustico.html">Receta de Pan Rústico</a></li>
+                <li><a href="receta_pan_centeno.html">Receta de Pan de Centeno</a></li>
+                <li><a href="receta_pan_avena.html">Receta de Pan de Avena</a></li>
+                <li><a href="receta_pan_pasas.html">Receta de Pan de Pasas</a></li>
+                <li><a href="receta_pan_frances.html">Receta de Pan Francés</a></li>
+                <li><a href="receta_pan_molde.html">Receta de Pan de Molde</a></li>
+                <li><a href="receta_pan_maiz.html">Receta de Pan Maiz</a></li>
+                <li><a href="receta_pan_chocolate.html">Receta de Pan de Chocolate. <span class="proximamente">PROXIMAMENTE</span></a></li>
+                <li><a href="receta_pan_romero.html">Receta de Pan de Romero<span class="proximamente">PROXIMAMENTE</span></a></li>
+                <li><a href="receta_pan_cerveza.html">Receta de Pan de Cerveza</a></li>
+                <li><a href="receta_pan_espelta.html">Receta de Pan de Espelta</a></li>
+            </ul>
+        </aside>
+        
+
+        <!-- Artículos principales -->
+        <article>
+            <section>
+                <h1>Panadería Artesanal</h1>
+                <p>En <strong>Migas Amigas</strong>, cada pan está hecho con pasión y los mejores ingredientes.</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                    <!-- Tarjetas de panes -->
+                    <div class="pan-card">
+                        <h2>Pan Integral</h2>
+                        <p>Saludable y delicioso, perfecto para el desayuno.</p>
+                        <img src="../../style/img/panaderia/pan_integral.jpg" alt="Pan Integral">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan Rústico</h2>
+                        <p>Con una corteza crujiente y miga esponjosa.</p>
+                        <img src="../../style/img/panaderia/pan_rustico.jpg" alt="Pan Rústico">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Centeno</h2>
+                        <p>Un clásico con un toque único y especial.</p>
+                        <img src="../../style/img/panaderia/pan_centeno.avif" alt="Pan de Centeno">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Avena</h2>
+                        <p>Ligero y lleno de fibra.</p>
+                        <img src="../../style/img/panaderia/pan_avena.jpg" alt="Pan de Avena">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Pasas</h2>
+                        <p>Perfecto para los amantes de lo dulce.</p>
+                        <img src="../../style/img/panaderia/pan_pasas.jpg" alt="Pan de Pasas">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan Francés</h2>
+                        <p>Ideal para acompañar cualquier comida.</p>
+                        <img src="../../style/img/panaderia/pan_frances.webp" alt="Pan Francés">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Molde</h2>
+                        <p>El clásico para tus sándwiches.</p>
+                        <img src="../../style/img/panaderia/pan_molde.jpg" alt="Pan de Molde">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Maíz</h2>
+                        <p>Con un toque dulce y textura única.</p>
+                        <img src="../../style/img/panaderia/pan_maiz.jpg" alt="Pan de Maíz">
+                    </div>
+
+                    <!-- Próximamente -->
+                    <div class="pan-card">
+                        <h2>Pan de Chocolate</h2>
+                        <p class="proximamente">¡PRÓXIMAMENTE!</p>
+                        <img src="../../style/img/panaderia/pan_chocolate.jpg" alt="Próximamente">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Romero</h2>
+                        <p class="proximamente">¡PRÓXIMAMENTE!</p>
+                        <img src="../../style/img/panaderia/pan_romero.jpg" alt="Próximamente">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Cerveza</h2>
+                        <p>Para los aventureros del sabor.</p>
+                        <img src="../../style/img/panaderia/pan_cerveza.jpg" alt="Pan de Cerveza">
+                    </div>
+
+                    <div class="pan-card">
+                        <h2>Pan de Espelta</h2>
+                        <p>Natural y fácil de digerir.</p>
+                        <img src="../../style/img/panaderia/pan_espelta.jpg" alt="Pan de Espelta">
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h3>Contáctanos</h3>
+                <p>Dirección: Av. de São Miguel 11, 6300-865 Guarda, Portugal </p>
+                <p>Teléfono: +63 123 45 6789</p>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <img src="../../style/img/redes sociales/instagram.png" alt="logoInstagram" width="50px">
+                    <img src="../../style/img/redes sociales/gorjeo.png" alt="logoX" width="50px">
+                    <img src="../../style/img/redes sociales/facebook.png" alt="logoFacebook" width="50px">
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <h3>Encuéntranos aquí</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.3479433333378!2d-7.248244750701558!3d40.55229194764059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cfbaa09a4ffed%3A0x10e63e3769edd6bb!2sMercadona!5e0!3m2!1ses!2ses!4v1738270706975!5m2!1ses!2ses" width="210" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>Sobre nuestra tienda</h3>
+                <p>En Migas Amigas utilizamos ingredientes frescos y de alta calidad para ofrecer las mejores empanadas, panes y bollería. Elaboramos todo artesanalmente, garantizando sabor y tradición.</p>
+            </div>
+        </div>
+        <p>© 2025 Migas Amigas | Diseñado con amor y sabor</p>
+    </footer>
+</body>
+</html>

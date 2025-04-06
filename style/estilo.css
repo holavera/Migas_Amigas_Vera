@@ -1,0 +1,240 @@
+:root {
+    --crema-pastel: #FDEBD0;
+    --beige-arena: #E7CBA9;
+    --marron-cacao: #8C4A2E;
+    --granate-rojo: #800020;
+}
+
+@font-face {
+    font-family: arial;
+    src: url('fuente/VIRUST.ttf');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--crema-pastel);
+    color: var(--marron-cacao);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    
+    background-color: var(--granate-rojo);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header a{
+    margin: 10px;
+}
+.es {
+    margin-left: 360px;
+    margin-top: 60px;
+}
+.pg{
+    margin-top: 60px;
+}
+
+header h1{
+    margin-left: 540px;
+    margin-top: 60px;
+}
+
+
+nav{
+    background: transparent;
+    width: 70%;
+    margin-left: 350px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    /*margin-left: 20px; /*Añade espacio entre los elementos */
+}
+nav ul li:hover{
+    transform: scale(1.05);
+    opacity: 30%;
+}
+
+nav ul li a{
+    margin: 0 15px; 
+    display: block; 
+    text-decoration: none; 
+
+    color: rgb(124, 3, 3);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+aside {
+    background-color: #ffd89e;
+    padding: 1rem;
+    width: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border: none;
+    border-radius: 10px;
+}
+
+article {
+    flex: 1;
+    margin: 0 10px;
+    padding: 1rem;
+    background-color: #ecc799;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.highlight {
+    color: var(--granate-rojo);
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--granate-rojo);
+    color: white;
+    margin-left: 410px;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--marron-cacao);
+    transform: scale(1.05);
+}
+
+.postre-card {
+    background-color: var(--beige-arena);
+    border: 2px solid var(--marron-cacao);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postre-card h2 {
+    color: var(--granate-rojo);
+}
+
+footer {
+    background-color: var(--beige-arena);
+    color: var(--marron-cacao);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-around; /* Alinea los divs horizontalmente */
+    align-items: center;
+    text-align: left;
+}
+
+.footer-info div {
+    flex: 1;
+    margin: 5px;
+}
+
+.footer-info img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+main aside ul li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* MEDIA QUERIES - Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header a {
+        margin: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .postre-card {
+        margin-left: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .btn {
+        width: 90%;
+        padding: 0.8rem 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
